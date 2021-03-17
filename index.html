@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bad API</title>
+
+   <!-- Den Link von bootstrap und unserem lokalen ordner css einfügen, wo wir einen Teil unseres css einbinden -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Containerklasse und in dem Container eine header  Klasse die den Text zentriert einfügt. In der header class das Logo hinzufügen.-->
+    <div class="container">
+    <header class="text-center mt-5">
+        <img src="img/bb-logo.png">
+    </header>
+
+    <!-- Einen container erstellen,  mit "Search Characters" als Platzhalter, da dies eine interaktive Schaltfläche ist, in der man die Characters dann sucht. -->
+    <div class="row mt-4">
+        <div class="col-md-6 mx-auto">
+    <input type="text" id="inp-search" class="form-control"            placeholder="Search Characters...">
+        </div>
+
+    </div>
+    <!-- Eine Sektion erschaffen, in dem der Output, also die gesuchten Charaktere angezeigt werden. -->
+    <section class="mt-5">
+        <div class="row" id="output">
+
+        </div>
+    </section>
+    </div>
+    <!-- Main.js einbinden, das als Quelle für das Skript selber dienen soll -->
+    <script src="js/main.js"></script>
+</body> 
+</html>
